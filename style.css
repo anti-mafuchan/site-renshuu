@@ -329,12 +329,46 @@ body {
 }
 
 /* --- レスポンシブ（スマホ対応） --- */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .about-text,
+    .about-skills {
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-baby {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 60px 0;
+    }
+
     .hero h1 {
         font-size: 2.2rem;
     }
 
     .main-baby {
         width: 180px;
+    }
+
+    .btn {
+        padding: 18px 40px;
+        width: 100%;
+        text-align: center;
     }
 }
